@@ -1,0 +1,82 @@
+body
+{
+  background-color: black;
+  overflow: hidden;
+  color: 0xffffff;
+}
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+  opacity:0.2;
+  pointer-events:none;
+}
+
+#myName
+{
+  top: 0;
+  color: white;
+  font-size: 6vw;
+  width:100%;
+  text-align:center;
+  top: 0%; 
+}
+
+.fontFam
+{
+  color: white;
+  font-family: 'Varela Round', 'Lato', sans-serif;
+}
+
+a {
+  outline: 0;
+}
+
+.myLinks
+{
+  height: 6vw;
+  transition: opacity .30s ease-in-out;
+  -moz-transition: opacity .30s ease-in-out;
+  -webkit-transition: opacity .30s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  filter: blur(0);
+}
+
+.myLinks:hover
+{
+  opacity: 0.5;
+  filter: blur(0);
+}
+
+#dickbutt
+{
+  position: fixed;
+  height: 50px;
+  opacity: 0;
+  transition: opacity .50s ease-in-out;
+  -moz-transition: opacity .50s ease-in-out;
+  -webkit-transition: opacity .50s ease-in-out;
+  filter: blur(0);
+}
+
+#dickbutt:hover
+{
+  opacity: 1;
+  filter: blur(0);
+}
+
+#patrickHead {
+  border-radius: 50%;
+  box-shadow: 0 0 50px blue;
+  position: relative;
+  height: 15vw;
+  width: 15vw;
+}
+
+#footer { 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
