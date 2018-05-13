@@ -10,7 +10,7 @@ canvas {
   top:0;
   left:0;
   z-index:100;
-  opacity:0.2;
+  opacity:0.35;
   pointer-events:none;
 }
 
@@ -21,7 +21,7 @@ canvas {
   font-size: 6vw;
   width:100%;
   text-align:center;
-  top: 0%; 
+  top: 0%;
 }
 
 .fontFam
@@ -42,28 +42,12 @@ a {
   -webkit-transition: opacity .30s ease-in-out;
   -webkit-backface-visibility: hidden;
   filter: blur(0);
+  margin: 20px 10px;
 }
 
 .myLinks:hover
 {
   opacity: 0.5;
-  filter: blur(0);
-}
-
-#dickbutt
-{
-  position: fixed;
-  height: 50px;
-  opacity: 0;
-  transition: opacity .50s ease-in-out;
-  -moz-transition: opacity .50s ease-in-out;
-  -webkit-transition: opacity .50s ease-in-out;
-  filter: blur(0);
-}
-
-#dickbutt:hover
-{
-  opacity: 1;
   filter: blur(0);
 }
 
@@ -73,10 +57,4 @@ a {
   position: relative;
   height: 15vw;
   width: 15vw;
-}
-
-#footer { 
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
