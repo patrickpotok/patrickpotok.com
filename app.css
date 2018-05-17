@@ -58,7 +58,7 @@ a {
   opacity: 0.5;
 }
 
-@media (min-width: 700px and max-width: 1050px) {
+@media screen and (min-width: 700px and max-width: 1050px) {
    .name {
      font-size: 9vw;
    }
@@ -72,7 +72,7 @@ a {
    }
 }
 
-@media (max-width: 699px) {
+@media screen and (max-width: 699px) {
    .name {
      font-size: 48px;
    }
