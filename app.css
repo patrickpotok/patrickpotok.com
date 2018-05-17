@@ -1,60 +1,88 @@
-body
-{
+body {
   background-color: black;
+  margin: 0;
   overflow: hidden;
-  color: 0xffffff;
 }
 
 canvas {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:100;
-  opacity:0.35;
-  pointer-events:none;
+  opacity: 0.35;
+  pointer-events: none;
+  position: absolute;
+  z-index: 100;
 }
 
-#myName
-{
-  top: 0;
-  color: white;
-  font-size: 6vw;
-  width:100%;
-  text-align:center;
-  top: 0%;
+.content {
+  display: block;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%
 }
 
-.fontFam
-{
+.name {
   color: white;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', monospace;
+  font-size: 7vw;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.head {
+  border-radius: 50%;
+  box-shadow: 0 0 50px blue;
+  height: 20vw;
+  margin: 50px auto;
+  position: relative;
+  width: 20vw;
 }
 
 a {
   outline: 0;
 }
 
-.myLinks
-{
-  height: 6vw;
+.links {
+  filter: blur(0);
+  height: 7vw;
+  margin: 0 10px;
   transition: opacity .30s ease-in-out;
   -moz-transition: opacity .30s ease-in-out;
   -webkit-transition: opacity .30s ease-in-out;
   -webkit-backface-visibility: hidden;
-  filter: blur(0);
-  margin: 20px 10px;
 }
 
-.myLinks:hover
-{
+.links:hover {
+  filter: blur(0);
   opacity: 0.5;
-  filter: blur(0);
 }
 
-#patrickHead {
-  border-radius: 50%;
-  box-shadow: 0 0 50px blue;
-  position: relative;
-  height: 15vw;
-  width: 15vw;
+@media (min-width: 700px and max-width: 1050px) {
+   .name {
+     font-size: 9vw;
+   }
+   .head {
+     height: 24vw;
+     margin: 50px auto;
+     width: 24vw;
+   }
+   .links {
+    height: 9vw;
+   }
+}
+
+@media (max-width: 699px) {
+   .name {
+     font-size: 48px;
+   }
+   .head {
+     height: 275px;
+     margin: 50px auto;
+     width: 275px;
+   }
+   .links {
+    height: 48px;
+    margin: 0 5px;
+   }
 }
