@@ -5,7 +5,7 @@ body {
 }
 
 canvas {
-  opacity: 0.35;
+  opacity: 0.25;
   pointer-events: none;
   position: absolute;
   z-index: 100;
@@ -24,8 +24,8 @@ canvas {
 .name {
   color: white;
   font-family: 'Varela Round', monospace;
-  font-size: 7vw;
-  margin: 0;
+  font-size: 12vh;
+  margin: 0 0 -30px;
   text-align: center;
   width: 100%;
 }
@@ -33,10 +33,10 @@ canvas {
 .head {
   border-radius: 50%;
   box-shadow: 0 0 50px rgba(153,70,36,255);
-  height: 35vw;
+  height: 45vh;
   margin: 50px auto;
   position: relative;
-  width: 35vw;
+  width: 45vh;
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 
 .links {
   filter: blur(0);
-  height: 7vw;
+  height: 6vw;
   margin: 0 25px;
   backface-visibility: hidden;
   transition: opacity .30s ease-in-out;
