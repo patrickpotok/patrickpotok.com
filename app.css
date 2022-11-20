@@ -46,7 +46,8 @@ a {
 .links {
   filter: blur(0);
   height: 7vw;
-  margin: 0 10px;
+  margin: 0 25px;
+  backface-visibility: hidden;
   transition: opacity .30s ease-in-out;
   -moz-transition: opacity .30s ease-in-out;
   -webkit-transition: opacity .30s ease-in-out;
@@ -82,7 +83,7 @@ a {
      width: 275px;
    }
    .links {
-    height: 48px;
-    margin: 0 5px;
+    height: 60px;
+    margin: 0 10px;
    }
 }
