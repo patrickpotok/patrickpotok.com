@@ -1,5 +1,14 @@
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFGRDY867J"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HFGRDY867J');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="keywords" content="patrickpotok,potok">
     <meta name="description" content="Patrick Potok's Personal Website">
@@ -19,48 +28,14 @@
   </head>
 
   <body>
-    <script>
-		  window.fbAsyncInit = function() {
-		    FB.init({
-		      appId      : '1722233714763051',
-		      xfbml      : true,
-		      version    : 'v2.7'
-		    });
-		    FB.AppEvents.logPageView();
-		  };
-
-		  (function(d, s, id){
-		    var js, fjs = d.getElementsByTagName(s)[0];
-		    if (d.getElementById(id)) {return;}
-		    js = d.createElement(s); js.id = id;
-		    js.src = "https://connect.facebook.net/en_US/sdk.js";
-		    fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));
-
-		  function onFacebookButtonClick() {
-			  FB.AppEvents.logEvent("pressedFacebookButton");
-			}
-			function onMessengerButtonClick() {
-			  FB.AppEvents.logEvent("pressedMessengerButton");
-			}
-			function onLinkedInButtonClick() {
-			  FB.AppEvents.logEvent("pressedLinkedInButton");
-			}
-			function onGithubButtonClick() {
-			  FB.AppEvents.logEvent("pressedGithubButton");
-			}
-			function onResumeButtonClick() {
-			  FB.AppEvents.logEvent("pressedResumeButton");
-			}
-		</script>
     <div class="content">
       <h1 class="name">Patrick Potok</h1>
 			<img class="head" src="images/patrickhead.jpg">
 	    <div>
-        <a href="https://www.instagram.com/patrickpotok/" target="_blank" onclick="onMessengerButtonClick()"><img class="links" src="images/instagram.png"></a>
-        <a href="https://www.linkedin.com/in/patrickpotok" target="_blank" onclick="onLinkedInButtonClick()"><img class="links" src="images/linkedin.png"></a>
-        <a href="https://github.com/patrickpotok" target="_blank" onclick="onGithubButtonClick()"><img class="links" src="images/github.png"></a>
-        <a href="resume.pdf" target="_blank" onclick="onResumeButtonClick()"><img class="links" src="images/resume.png"></a>
+        <a href="https://www.instagram.com/patrickpotok/" target="_blank"><img class="links" src="images/instagram.png"></a>
+        <a href="https://www.linkedin.com/in/patrickpotok" target="_blank"><img class="links" src="images/linkedin.png"></a>
+        <a href="https://github.com/patrickpotok" target="_blank"><img class="links" src="images/github.png"></a>
+        <a href="resume.pdf" target="_blank"><img class="links" src="images/resume.png"></a>
 	    </div>
   	</div>
 
