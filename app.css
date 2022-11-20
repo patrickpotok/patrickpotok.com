@@ -32,11 +32,11 @@ canvas {
 
 .head {
   border-radius: 50%;
-  box-shadow: 0 0 50px blue;
-  height: 20vw;
+  box-shadow: 0 0 50px rgba(153,70,36,255);
+  height: 35vw;
   margin: 50px auto;
   position: relative;
-  width: 20vw;
+  width: 35vw;
 }
 
 a {
@@ -58,14 +58,14 @@ a {
   opacity: 0.5;
 }
 
-@media screen and (min-width: 700px and max-width: 1050px) {
+@media screen and (min-width: 700px) and (max-width: 1050px) {
    .name {
      font-size: 9vw;
    }
    .head {
-     height: 24vw;
+     height: 30vw;
      margin: 50px auto;
-     width: 24vw;
+     width: 30vw;
    }
    .links {
     height: 9vw;
