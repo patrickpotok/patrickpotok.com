@@ -48,19 +48,20 @@ function init() {
   scene.add(directionalLight);
 
   // envmap
-  const genCubeUrls = function (prefix, postfix) {
-
+  const genCubeUrls = function () {
     return [
-      prefix + 'px' + postfix, prefix + 'nx' + postfix,
-      prefix + 'py' + postfix, prefix + 'ny' + postfix,
-      prefix + 'pz' + postfix, prefix + 'nz' + postfix
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/px.jpg',
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/nx.jpg',
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/py.jpg',
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/ny.jpg',
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/pz.jpg',
+      'https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/background_images/nz.jpg',
     ];
-
   };
 
-  const urls = genCubeUrls('images/background_images/', '.jpg');
+  const urls = genCubeUrls();
 
-  new THREE.CubeTextureLoader().setCrossOrigin(null).load(urls, function (cubeTexture) {
+  new THREE.CubeTextureLoader().load(urls, function (cubeTexture) {
 
     scene.background = cubeTexture;
 
@@ -75,7 +76,7 @@ function init() {
       roughness: 0,
       envMap: cubeTexture,
       envMapIntensity: API.envMapIntensity,
-      map: new THREE.TextureLoader().load('images/patrickhead.jpg'),
+      // map: new THREE.TextureLoader().load('https://raw.githubusercontent.com/patrickpotok/patrickpotok.com/master/images/patrickhead.jpg'),
     });
 
     // mesh
