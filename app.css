@@ -5,8 +5,6 @@ body {
 }
 
 canvas {
-  opacity: 0.25;
-  pointer-events: none;
   position: absolute;
   z-index: 100;
 }
